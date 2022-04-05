@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/SCIP logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/img/DevJam Logo.png" type="image/x-icon">
 
         <!--=============== REMIX ICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -16,41 +16,35 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>SC Incubation Program</title>
+        <title>DEV JAM</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
-                    <img id="scip_logo" src="/assets/img/SCIP logo.png" alt="">
+                    <img id="scip_logo" src="/assets/img/DevJam Logo.png" alt="">
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
+                            <a href="#about" class="nav__link">Hakkımızda</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
+                            <a href="#prizes" class="nav__link">Ödüller</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#timeline" class="nav__link">Timeline</a>
+                            <a href="#partners" class="nav__link">Partnerler</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#preacc" class="nav__link">PreAcceleration</a>
+                            <a href="#eventplan" class="nav__link">Etkinlik Planı</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#partners" class="nav__link">Partners</a>
+                            <a href="#sss" class="nav__link">SSS</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#startups" class="nav__link">Startups</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#faqs" class="nav__link">FAQs</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
+                            <a href="#iletisim" class="nav__link">İletişim</a>
                         </li>
                     </ul>
 
@@ -75,25 +69,51 @@
             <section class="home" id="home">
                 <div class="home__container container grid">
                     <a href="https://www.youtube.com/watch?v=rVn8eA4G4Tc" target="blank" style="text-align: center; cursor: pointer; margin-right: 50px;">
-                        <img src="/assets/img/scip-home-bg-n.png" class="home__img" alt="" data-sr-id="2" style="visibility: visible;opacity: 1;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.5s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.5s;object-fit: cover;">
+                        <img src="/assets/img/gamejam-bghp.svg" class="home__img" alt="" data-sr-id="2" style="visibility: visible;opacity: 1;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.5s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.5s;object-fit: cover;">
                     </a>
 
 
                     <div class="home__data">
+
                         <h1 class="home__title">
-                            Sustainable Development <br> Goals
+                            DEV JAM<br> 
                         </h1>
-                        <p class="home__description">
-                            Solution Challenge Incubation Program is a specially designed, curated suite of educational, incubation, networking and investment tools, hackathon guidance and resources for impact student entrepreneurs who are building their projects for Solution Challenge that address one or more of the Sustainable Development Goals (SDGs).
-                        </p>
+
+                        <div id="countdown" class="countdown">
+
+                            <div class="time">
+                                <h2 id="days">00</h2>
+                                <small>Days</small>
+                            </div>
+
+                            <div class="time">
+                                <h2 id="hours">00</h2>
+                                <small>Hours</small>
+                            </div>
+
+                            <div class="time">
+                                <h2 id="minutes">00</h2>
+                                <small>Minutes</small>
+                            </div>
+
+                            <div class="time">
+                                <h2 id="seconds">00</h2>
+                                <small>Seconds</small>
+                            </div>
+
+                        </div>
+
                         <div class="deneme">
-                            <a href="https://bit.ly/scip-acc" target="blank" class="button button--flex">
-                                Apply <i class="ri-arrow-right-down-line button__icon"></i>
+                            <a href="https://bit.ly/scip-on-hızlandırma" target="blank" class="button button--flex">
+                                Register <i class="ri-arrow-right-down-line button__icon"></i>
+                            </a>
+                            <a href="#counters" class="button2 button--flex">
+                                <i class="ri-play-line"></i>
                             </a>
                         </div>
                     </div>
 
-
+            <!--==================== FACILITIES ====================-->
                     <div class="home__social">
                         <span class="home__social-follow">Follow Us</span>
 
@@ -108,32 +128,35 @@
                     </div>
                 </div>
 
-                <div class="counters">
+                <div class="counters" id="counters">
                     <div class="counters__container">
                         <div>
-                            <i class="ri-user-line"></i>
-                            <div class="counter" data-target="9858">0</div>
-                            <h3>Participant</h3>
+                            <div class="img-prize">
+                                <img src="/assets/img/odul.png" alt="">
+                            </div>
+                            
+                            <h3>Birçok Sürpriz Ödül</h3>
                         </div>
                         <div>
-                            <i class="ri-group-fill"></i>
-                            <div class="counter" data-target="153">0</div>
-                            <h3>Mentor</h3>
+                            <div class="img-prize">
+                                <img src="/assets/img/mentorluk.png" alt="">
+                            </div>
+                            
+                            <h3>Mentorluk Desteği</h3>
                         </div>
                         <div>
-                            <i class="ri-lightbulb-line"></i>
-                            <div class="counter" data-target="100">0</div>
-                            <h3>Project Idea</h3>
+                            <div class="img-prize">
+                                <img src="/assets/img/kariyer.png" alt="">
+                            </div>
+                            
+                            <h3>Kariyer Fırsatları</h3>
                         </div>
                         <div>
-                            <i class="ri-building-fill"></i>
-                            <div class="counter" data-target="10">0</div>
-                            <h3>Social Enterprise</h3>
-                        </div>
-                        <div>
-                            <i class="ri-team-fill"></i>
-                            <div class="counter" data-target="6">0</div>
-                            <h3>Projects from Turkey in the top 50</h3>
+                            <div class="img-prize">
+                                <img src="/assets/img/network.png" alt="">
+                            </div>
+                            
+                            <h3>Network İmkanları</h3>
                         </div>
                     </div>
                 </div>
@@ -143,131 +166,67 @@
             <!--==================== ABOUT ====================-->
             <section class="about section container" id="about" style="padding: inherit;">
                 <div class="about__container grid">
-                    <img src="assets/img/sdglogo-removebg.png" alt="" class="about__img">
+                    <img src="assets/img/SCIP logo.png" style="margin-bottom: 4rem;" alt="" class="about__img">
 
                     <div class="about__data">
+
                         <h2 class="section__title about__title">
-                            Who we really are & <br> about us
+                            DevJam Nedir? 
                         </h2>
 
                         <div class="about__details">
                             <p class="about__details-description">
                                 <i class="ri-checkbox-fill about__details-icon"></i>
-                                SCIP is a curated suite of training, incubation, networking and investment tools, hackathons, and resources specifically designed for influential student entrepreneurs building their projects for the Solution Challenge targeting one or more of the Sustainable Development Goals (SDGs).
-                            </p>
-                            <p class="about__details-description">
+                                Google Developer Student Club ODTÜ olarak düzenlediğimiz yılın en prestijli oyun yarışmasına hazır mısın? <br>
                                 <i class="ri-checkbox-fill about__details-icon"></i>
-                                The Solution Challenge Incubation Program will be a process involving 4 Hackathons in total to motivate teams to build efficient teams and create projects to participate in global competition. It will be a 5 month program for startup companies working on products / services targeting one or more of the United Nations Sustainable Development Goals (UN SDGs).
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                With the Solution Challenge Incubation Program we are looking for impactful companies that adopt a technical mindset to solve some of humanity's greatest challenges, with the vision of making the world better by acting with these sustainable goals.
+                                Oyun dünyasına meraklıysan ve bizimle birlikte 48 saat boyunca oyun geliştirmek istiyorsan bu yarışma tam da sana göre!
                             </p>
                         </div>
+
                     </div>
+                    
                 </div>
             </section>
 
-            <!--==================== STEPS ====================-->
-            <!-- <section class="steps section container" id="timeline">
-                <div class="steps__bg">
-                    <h2 class="section__title-center steps__title">
-                        About the<br> Stages
-                    </h2>
-
-                    <div class="steps__container grid">
-
-                        <div class="steps__card card__1">
-                            
-                            <div class="steps__card-number">Basic Training</div>
-                            <div class="steps__card-hover">
-                            <h3 class="steps__card-title">17 Jan - 11 Feb</h3>
-                            <p class="steps__card-description">
-                                At this stage, the participants will have the chance to find teams and expand their networks before the hackathons with the training series they will receive. <br><br>
-                                1) Basic Training <br>
-2) Entrepreneurship 101 <br>
-3) SDG’s Introduction <br>
-4) Networking Events <br>
-5) Social Entrepreneurship <br>
-6) Business for Goals <br>
-7) Create ideas and build teams
-                            </p>
-                        </div>
-                        </div>
-
-                        <div class="steps__card card__2">
-                            
-                            <div class="steps__card-number">Hackathons</div>
-                            <div class="steps__card-hover">
-                            <h3 class="steps__card-title">11 Feb - 6 Mar</h3>
-                            <p class="steps__card-description">
-                                In the hackathons stage, students can team up in the hackathons for the Sustainable Development Goals and start working on the best idea in the Solution Challenge. At the end of the hackathons, the top three teams from all projects will be qualified for SCIP. <br><br>
-
-                                1) Hackathons (Hack for Global Goals) <br>
-2) 1:1s with mentors & advisors <br>
-3) Entrepreneurship 101 <br>
-4) Sustainable Technologies with Companies
-
-                            </p>
-                        </div>
-                        </div>
-
-                        <div class="steps__card card__3">
-                            <div class="steps__card-number">Pre - Acceleration</div>
-                            <div class="steps__card-hover">
-                            <h3 class="steps__card-title">14 - 31 March
-                            </h3>
-                            <p class="steps__card-description">
-                                In the pre-acceleration section, we start working immediately to participate in the Solution Challenge with better projects. Together with the expert mentors in the field, the needs are determined, and the teams are supported in those areas. <br><br>
-
-                                1) Weekly Updates <br>
-2) 1:1s with GDEs & Mentors <br>
-3) Social Impact Measurement Lessons <br>
-4) Group Feedback Sessions with the Peers <br>
-5) Social Entrepreneurship Training
-
-                            </p>
-                        </div>
-                        </div>
-
-                        <div class="steps__card card__4">
-                            <div class="steps__card-number">Acceleration</div>
-                            <div class="steps__card-hover">
-                            <h3 class="steps__card-title">April
-                            </h3>
-                            <p class="steps__card-description">
-                                We will support selected projects for this stage. Looking for establishing companies initiated by students that are taking a technical approach to solving some of humanity’s biggest challenges, with the vision for changing the world for the better. <br><br>
-
-                                1) Expert Hours <br>
-2) Funding Opportunities <br>
-3) Corporate Engagement <br>
-4) Networking with Angel Investors <br>
-5) Dinner nights with talks from inspirational founders
-                            </p>
-                        </div>
-                        </div>
-
-                        
-
+            <!--==================== PRIZES ====================-->
+            <div class="counters" id="prizes">
+                <h1 class="home__title-prize">
+                    ÖDÜLLER<br> 
+                </h1>
+                <div class="counters__container">
+                    <div>
+                        <img src="/assets/img/medal (1).png" alt="">
+                        <h4>1. lik Ödülü <br> </h4>
+                        <h1>7500 ₺</h1>
                     </div>
-
-                    <div class="stage__iframe">
-                        <iframe class="stage__img" src="https://www.youtube.com/embed/EuEZ83VAfgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                        <img src="/assets/img/medal (2).png" alt="">
+                        <h4>2. lik Ödülü <br> </h4>
+                        <h1>5000 ₺</h1>
                     </div>
-
+                    <div>
+                        <img src="/assets/img/medal.png" alt="">
+                        <h4>3. lik Ödülü <br> </h4>
+                        <h1>2500 ₺</h1>
+                    </div>
+                    <div>
+                        <img src="/assets/img/6_20220405_225817_0003.png" alt="">
+                        <h4>ve çok daha <br> </h4>
+                        <h1>FAZLASI</h1>
+                    </div>
                 </div>
-            </section> -->
+            </div>
+
             
             <section class="section container" id="timeline">
-                <h1>Timeline</h1>
+                <h1>Etkinlik Programı</h1>
 <br> 
 <div class="process-wrapper">
 <div id="progress-bar-container">
 	<ul>
-		<li class="step step01 active"><div class="step-inner">Basic Training</div></li>
-		<li class="step step02"><div class="step-inner">Hackathons</div></li>
-		<li class="step step03"><div class="step-inner">Pre Acceleration</div></li>
-		<li class="step step04"><div class="step-inner">Acceleration</div></li>
+		<li class="step step01 active"><div class="step-inner">1. GÜn</div></li>
+		<li class="step step02"><div class="step-inner">2. Gün</div></li>
+		<li class="step step03"><div class="step-inner">3. Gün</div></li>
 	</ul>
 	
 	<div id="line">
@@ -277,51 +236,117 @@
 
 <div id="progress-content-section">
 	<div class="section-content discovery active">
-		<h2>Basic Training</h2>
-		<div class="steps__card-title">17 Jan - 11 Feb</div>
-                            <p class="steps__card-description">
-                                At this stage, the participants will have the chance to find teams and expand their networks before the hackathons with the training series they will receive. <br><br>
-                                1) Basic Training <br>
-2) Entrepreneurship 101 <br>
-3) SDG’s Introduction <br>
-4) Networking Events <br>
-5) Social Entrepreneurship <br>
-6) Business for Goals <br>
-7) Create ideas and build teams
-                            </p>
+		<h2>1. Gün</h2>
+		<div class="steps__card-title">13 Mayıs</div>
+        <div class="steps__card-img">
+            <img src="/assets/img/store-opening-new-business-grand-opening-open-for-business-svgrepo-com.svg" alt="">
+        </div>
+        <div class="steps__card-timeline">
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                12.00 - Game Jam açılışı <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                13.00 - Game Jam başlangıcı <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                15.30 - Sponsor Webinarı <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                18.00 - Yemek Aralığı <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                21.00 - Sponsor Webinarı <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Çekilişler <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Gece atıştırmalık servisi <br>
+            </p>
+
+        </div>
+                            
+
+                            
+                                                            
 	</div>
 	
 	<div class="section-content strategy">
-		<h2>Hackathons</h2>
-		<div class="steps__card-title">11 Feb - 6 Mar</div>
-                            <p class="steps__card-description">
-                                In the hackathons stage, students can team up in the hackathons for the Sustainable Development Goals and start working on the best idea in the Solution Challenge. At the end of the hackathons, the top three teams from all projects will be qualified for SCIP. <br><br>
+		<h2>2. Gün</h2>
+		<div class="steps__card-title">14 Mayıs</div>
+        <div class="steps__card-img">
+            <img src="/assets/img/code-svgrepo-com.svg" alt="">
+        </div>
+        <div class="steps__card-timeline">
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                9.00 Kahvaltı Servisi <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                14.00 Öğle Yemeği <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Çekilişler <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                20.00 Akşam Yemeği <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Eğlence, dinlenme etkinlikleri <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Gece atıştırmalık servisi <br>
+            </p>
 
-                                1) Hackathons (Hack for Global Goals) <br>
-2) 1:1s with mentors & advisors <br>
-3) Entrepreneurship 101 <br>
-4) Sustainable Technologies with Companies
-
-                            </p>
+        </div>         
+               
 	</div>
 	
 	<div class="section-content creative">
-		<h2>Pre Acceleration</h2>
-		<div class="steps__card-title">14 - 31 March
+		<h2>3. Gün</h2>
+		<div class="steps__card-title">15 Mayıs</div>
+        <div class="steps__card-img">
+            <img src="/assets/img/finish-svgrepo-com.svg" alt="">
         </div>
-        <p class="steps__card-description">
-            In the pre-acceleration section, we start working immediately to participate in the <a href="https://linktr.ee/scincubationprogram" target="blank" style="font-size: 17px;text-transform: uppercase;letter-spacing: 1px;color: #4386F3;">Google Solution Challenge</a> with better projects. Together with the expert mentors in the field, the needs are determined, and the teams are supported in those areas. <br><br>
+        <div class="steps__card-timeline">
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                11.00-13.00 Katılımcıların projelerini itch.io platformuna yüklemesi <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                13.00-14.30 Katılımcı takımların oyuna yönelik sunumları yapması <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                13.00-17.00 JuriDeğerlendirmesi <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                17.00 Kazananların açıklanması ve ödül takdimi <br>
+            </p>
+            <p class="steps__card-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                18.00 Kapanış <br>
+            </p>
 
-            1) Weekly Updates <br>
-2) 1:1s with GDEs & Mentors <br>
-3) Social Impact Measurement Lessons <br>
-4) Group Feedback Sessions with the Peers <br>
-5) Social Entrepreneurship Training
+        </div>
+                            
 
-        </p>
-        <a href="https://linktr.ee/scincubationprogram" target="blank" class="button button--flex" style="height: 6%;padding: .5rem 1.5rem;margin-top: 1rem;">Apply 
-            <i class="ri-arrow-right-down-line button__icon"></i>
-        </a>
+                            
+               
 	</div>
 	
 	<div class="section-content production">
@@ -340,199 +365,25 @@
 	</div>
 	</div>
 </div>
-
-<div class="stage__iframe">
-    <iframe class="stage__img" src="https://www.youtube.com/embed/EuEZ83VAfgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
             </section>
 
-            <!--==================== HACKATHONS ====================-->
-            <!-- <div class="hackathons section" id="hackathons" style="text-align: center;">
-                <h2 class="section__title about__title" style="text-align:center;">Hackathons</h2>
-                <section class="container" style="display:flex;">
-                    <div style="width: 100%;">
-                        <a target="blank" style="width: 100%;">
-                            <img src="/assets/img/banner.png" class="home__img" alt="" data-sr-id="2" style="width: 100%;">
-                        </a>
-                    </div>
-                </section>
-                <section class="container" style="display:flex;">
-                    <div style="width:49%; margin-left:25.5%;">
-                        <a target="blank" style="text-align: center;">
-                            <img src="/assets/img/2.png" class="home__img" alt="" data-sr-id="2" >
-                        </a>
-                        <h3>Flutter Hackathon</h3>
-                        <p>11 - 12 - 13 February</p>
-                        <p style="padding: 0 0 2% 0;">Flutter Hackathon is a hackathon where students will use Google technologies to produce solutions for SDGs.</p>
-                        <a href="https://flutterfestivali.com/" target="blank" class="button button--flex" style="height: 6%;">More Information 
-                            <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
-                    </div>
-                </section>
-                <section class="container" style="display:flex;">
-                    <div style="float:left;width: 49%; margin-right: 2%;">
-                        <a target="blank" style="text-align: center;">
-                            <img src="/assets/img/4.png" class="home__img" alt="" data-sr-id="2">
-                        </a>
-                        <h3>Prosperity & Peace Hackathon</h3>
-                        <p>25 - 26 - 27 February</p>
-                        <p>People & Prosperity & Peace Hackathon is a hackathon where students will find solutions for SDG 1, 2, 3, 4,5, 7, 8, 9, 10, 11, and 16 by using Google technologies for an understanding of well-being based on human rights and social justice, end poverty and hunger in all its forms and dimensions and a life free from fear and violence for global peace.</p>
-                        <a href="https://forms.gle/QFbGqo1b5NsVg7Ed7" target="blank" class="button button--flex" style="height: 6%;">Register 
-                            <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
-                    </div>
-                    <div style="float:left;width: 49%;">
-                        <a target="blank" style="text-align: center;">
-                            <img src="/assets/img/5.png" class="home__img" alt="" data-sr-id="2" >
-                        </a>
-                        <h3>Planet Hackathon</h3>
-                        <p>4 - 5 - 6 March</p>
-                        <p>Planet Hackathon will seek technology-driven solutions to resolve SDGs with a focus on SDG 6,12,13,14,15 to ensure sustainable management of natural resources for a strong planet.</p>
-                        <a href="https://bit.ly/scip_planet" target="blank" class="button button--flex" style="height: 6%;">Register 
-                            <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
-                    </div>
-                </section>
-            </div> -->
-
-            <!--==================== HACKATHON ====================-->
-            <!-- <div class="hackathons section" id="preacc" style="text-align: center;"> -->
-                <!-- <h2 class="section__title about__title" style="text-align:center;">Hackathons</h2> -->
-                <!-- <div class="container" style="display:flex;">
-                    <div style="width: 100%;">
-                        <a target="blank" style="width: 100%;">
-                            <img src="/assets/img/which-pro.png" class="home__img" alt="" data-sr-id="2" style="width: 100%;">
-                        </a>
-                    </div>
-                </div>
-            </div> -->
-
-            <!--==================== HACKATHON ====================-->
-            <div class="hackathons section container" id="preacc">
-                <h2 class="section__title about__title">Hackathons</h2>
-                <p class="home__description">
-                    Hackathons are where students use Google technologies to produce solutions for SDGs.
-                </p>
-            </div>
+          
 
 
 
-            <!--==================== PRE-ACCELERATION ====================-->
-            <div class="hackathons section container" id="preacc" style="text-align: center;">
-                <!-- <h2 class="section__title about__title" style="text-align:center;">Applications will open soon</h2> -->
-                <div class="container" style="display:flex;">
-                    <div style="width: 100%;">
-                        <a target="blank" style="width: 100%;">
-                            <img src="/assets/img/SCIP WEBSITE (2).png" class="home__img" alt="" data-sr-id="2" style="width: 100%;">
-                        </a>
-                        <a href="https://linktr.ee/scincubationprogram" target="blank" class="button button--flex" style="height: 6%;">Apply 
-                            <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!--==================== ACCELERATION ====================-->
-            <div class="hackathons section container" id="preacc">
-                <h2 class="section__title about__title">Applications will open soon</h2>
-                <div class="container" style="display:flex;">
-                    <div style="width: 100%;">
-                        <a target="blank" style="width: 100%;">
-                            <img src="/assets/img/SCIP WEBSITE (5).png" class="home__img" alt="" data-sr-id="2" style="width: 100%;">
-                        </a>
-                        <div class="text-center">
-                            <a href="#" target="blank" class="button button--flex" style="height: 6%;">Apply 
-                                <i class="ri-arrow-right-down-line button__icon"></i>
-                            </a>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <!-- <section class="steps section container" id="timeline">
-
-                <div class="steps__bg_2">
-                    <h2 class="section__title-center steps__title">
-                        About the<br> Stages
-                    </h2>
-
-                    <div class="steps__container_2 grid">
-
-                        <div class="steps__card card__1">
-                            
-                            <div class="steps__card-number">Basic Training</div>
-                            <div class="steps__card-hover">
-                            <h3 class="steps__card-title">17 Jan - 11 Feb</h3>
-                            <p class="steps__card-description">
-                                At this stage, the participants will have the chance to find teams and expand their networks before the hackathons with the training series they will receive. <br><br>
-                                1) Basic Training <br>
-2) Entrepreneurship 101 <br>
-3) SDG’s Introduction <br>
-4) Networking Events <br>
-5) Social Entrepreneurship <br>
-6) Business for Goals <br>
-7) Create ideas and build teams
-                            </p>
-                        </div>
-                        </div>
-
-                        <div class="steps__card card__2">
-                            
-                            <div class="steps__card-number">Hackathons</div>
-                            <div class="steps__card-hover">
-                            <h3 class="steps__card-title">11 Feb - 6 Mar</h3>
-                            <p class="steps__card-description">
-                                In the hackathons stage, students can team up in the hackathons for the Sustainable Development Goals and start working on the best idea in the Solution Challenge. At the end of the hackathons, the top three teams from all projects will be qualified for SCIP. <br><br>
-
-                                1) Hackathons (Hack for Global Goals) <br>
-2) 1:1s with mentors & advisors <br>
-3) Entrepreneurship 101 <br>
-4) Sustainable Technologies with Companies
-
-                            </p>
-                        </div>
-                        </div>
-
-                        <div class="steps__card card__3">
-                            <div class="steps__card-number">Pre - Acceleration</div>
-                            <div class="steps__card-hover">
-                            <h3 class="steps__card-title">14 - 31 March
-                            </h3>
-                            <p class="steps__card-description">
-                                In the pre-acceleration section, we start working immediately to participate in the Solution Challenge with better projects. Together with the expert mentors in the field, the needs are determined, and the teams are supported in those areas. <br><br>
-
-                                1) Weekly Updates <br>
-2) 1:1s with GDEs & Mentors <br>
-3) Social Impact Measurement Lessons <br>
-4) Group Feedback Sessions with the Peers <br>
-5) Social Entrepreneurship Training
-
-                            </p>
-                        </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section> -->
-            <!--==================== CURRENT SPONSORS ====================-->
+            <!--==================== SPONSORS ====================-->
             <section class="product section container" id="partners">
                 <h2 class="section__title-center">
-                    Check out our <br> Current Sponsors
+                    Değerli Destekçilerimiz
                 </h2>
 
                 <p class="product__description">
-                    Here Are Our Valued Sponsors
+                    Bizimle birlikte olan değerli sponsorlarımız
                 </p>
                 
                 <br>
-                <h4 class="product__description" >Platinum Sponsor</h4>
+
+                <h4 class="product__description" >Ana Sponsor</h4>
                 
                 <div class="product__container" style="width:250px;margin-left: auto; margin-right:auto;">
                     
@@ -545,7 +396,47 @@
                     
                 </div>
                 
-                <h4 class="product__description" >Media Sponsors</h4>
+                <h4 class="product__description" >Çekiliş Sponsoru</h4>
+                
+                <div class="product__container grid">
+                    
+                    <article class="product__card">
+                        <a class="product__img" href="https://www.kodluyoruz.com/">
+                            <img src="assets/img/kodluyoruz_n-removebg-preview.png" alt="" class="product__img" style="height: 142.5px;">
+                        </a>
+                        <a class="product__title" href="https://www.kodluyoruz.com/">Kodluyoruz</a>
+                    </article>
+                    
+                    <article class="product__card">
+                        <a class="product__img" href="https://www.webtekno.com/">
+                            <img src="assets/img/WebteknoLogo.png" alt="" class="product__img" style="height: 142.5px;">
+                        </a>
+                        <a class="product__title"href="https://www.webtekno.com/">Webtekno</a>
+                    </article>
+                    
+                </div>
+
+                <h4 class="product__description" >Ödül Sponsoru</h4>
+                
+                <div class="product__container grid">
+                    
+                    <article class="product__card">
+                        <a class="product__img" href="https://www.kodluyoruz.com/">
+                            <img src="assets/img/kodluyoruz_n-removebg-preview.png" alt="" class="product__img" style="height: 142.5px;">
+                        </a>
+                        <a class="product__title" href="https://www.kodluyoruz.com/">Kodluyoruz</a>
+                    </article>
+                    
+                    <article class="product__card">
+                        <a class="product__img" href="https://www.webtekno.com/">
+                            <img src="assets/img/WebteknoLogo.png" alt="" class="product__img" style="height: 142.5px;">
+                        </a>
+                        <a class="product__title"href="https://www.webtekno.com/">Webtekno</a>
+                    </article>
+                    
+                </div>
+
+                <h4 class="product__description" >Medya Sponsoru</h4>
                 
                 <div class="product__container grid">
                     
@@ -567,273 +458,40 @@
                
             </section>
 
-            <!--==================== CURRENT PARTNERS ====================-->
+            <!--==================== MENTORS ====================-->
             <section class="product section container" id="partners">
+
                 <h2 class="section__title-center">
-                    Check out our <br> Current Partners
+                    Değerli Mentörlerimiz
                 </h2>
 
-                <p class="product__description">
-                    Here Are Our Valued Partners
-                </p>
-
-                <div class="product__container grid">
-
-                    <article class="product__card">
-
-                        <img src="assets/img/500_logo_darkblue_rgb-(1).png" alt="" class="product__img">
-
-                        <h3 class="product__title">500</h3>
-                    </article>
-
-                    <article class="product__card">
-
-                        <img src="assets/img/uas.png" alt="" class="product__img" style="height: 142.5px;
-                        object-fit: cover;">
-
-                        <h3 class="product__title">Üretken Akademi</h3>
-                    </article>
-
-                </div>
             </section>
 
-            <!--==================== LAST SPONSORS ====================-->
-            <section class="product section container" id="partners">
-                <h2 class="section__title-center">
-                    Check out our <br> Last Sponsors
-                </h2>
-
-                <p class="product__description">
-                    Here Are Our Valued Sponsors
-                </p>
-
-                <div class="product__container grid">
-
-                    <article class="product__card">
-
-                        <img src="assets/img/uas.png" alt="" class="product__img" style="height: 142.5px;
-                        object-fit: cover;">
-
-                        <h3 class="product__title">Üretken Akademi</h3>
-                    </article>
-
-                    <article class="product__card">
-
-                        <img src="assets/img/jb-removebg-preview (1).png" alt="" class="product__img">
-
-                        <h3 class="product__title">Jet Brains</h3>
-                    </article>
-
-                    <article class="product__card">
-
-                        <img src="assets/img/path.png" alt="" class="product__img">
-
-                        <h3 class="product__title">Path</h3>
-                    </article>
-
-                    <article class="product__card">
-
-                        <img src="assets/img/fluttertr.png" alt="" class="product__img">
-
-                        <h3 class="product__title">Flutter Türkiye</h3>
-                    </article>
-
-                    <article class="product__card">
-
-                        <img src="assets/img/kodluyoruz_n-removebg-preview.png" alt="" class="product__img">
-
-                        <h3 class="product__title">Kodluyoruz</h3>
-                    </article>
-
-                    <article class="product__card">
-
-                        <img src="assets/img/wwf_n-removebg-preview.png" alt="" class="product__img">
-
-                        <h3 class="product__title">WWF</h3>
-                    </article>
-
-                    <article class="product__card">
-
-                        <img src="assets/img/mysec-removebg-preview.png" alt="" class="product__img">
-
-                        <h3 class="product__title">My Security Analytics</h3>
-                    </article>
-
-                    <article class="product__card">
-
-                        <img src="assets/img/aytemiz.png" alt="" class="product__img">
-
-                        <h3 class="product__title">Aytemiz</h3>
-                    </article>
-
-
-                </div>
-            </section>
-
-            <!--==================== STEPS ====================-->
-            <section class="steps section container" id="startups">
-                <div class="steps__bg">
-                    <h2 class="section__title-center steps__title">
-                        Meet our<br> Startups
-                    </h2>
-
-                    <div class="steps__container steps__back grid">
-
-                        <div class="steps__card bl">
-                            <div class="steps__row">
-                                <img src="/assets/img/yeşil.png" alt="">
-                            <div class="steps__card-number steps__back-number">Yeşil</div>
-                            </div>
-                            <p class="steps__card-description">
-                                Yeşil is for people to discover the green and public spaces around them according to their needs and desired, see their opportunities, and reach there. A mobile application that allows them to spend quality and fun time.
-                            </p>
-                        </div>
-
-                        <div class="steps__card bl">
-                            <div class="steps__row">
-                                <img src="/assets/img/we_logo.png" alt="">
-                            <div class="steps__card-number steps__back-number">We</div>
-                            </div>
-                            <p class="steps__card-description">
-                                WE is a mobile application that aims to make plastic recycling in the world more efficient and effective by using the power of gamification and community effect, and it is a recycling bin called HeroStation that works in integration with it.
-                            </p>
-                        </div>
-
-                        <div class="steps__card bl">
-                            <div class="steps__row">
-                                <img src="/assets/img/çiftçiden icon - Fatih Atagün (1).png" alt="">
-                            <div class="steps__card-number steps__back-number">Çiftçiden</div>
-                            </div>
-                            <p class="steps__card-description">
-                                Çiftçiden; It is an e-commerce platform where the farmer will determine the value of his own product and present it to the consumer, and the consumer will buy the agricultural product directly from the farmer and reach the freshest food at the most affordable price.
-                            </p>
-                        </div>
-
-                        <div class="steps__card bl">
-                            <div class="steps__row">
-                                <img src="/assets/img/eggs.png" alt="">
-                            <div class="steps__card-number steps__back-number">Buluş Yuvası</div>
-                            </div>
-                            <p class="steps__card-description">
-                                Meeting point for aspiring entrepreneurs, scientists, and expert employees.
-                            </p>
-                        </div>
-
-                        <div class="steps__card bl">
-                            <div class="steps__row">
-                                <img src="/assets/img/parksal.png" alt="">
-                            <div class="steps__card-number steps__back-number">Parksal</div>
-                            </div>
-                            <p class="steps__card-description">
-                                Parksal is an IoT-based intiative that reduces the negative effects of parking finding processes by defining the parking spaces between the streets.
-                            </p>
-                        </div>
-
-                        <div class="steps__card bl">
-                            <div class="steps__row">
-                                <img src="/assets/img/edushare.png" alt="">
-                            <div class="steps__card-number steps__back-number">EduShare</div>
-                            </div>
-                            <p class="steps__card-description">
-                                An application, platform that students who have difficulty in meeting their school needs can obtain from students who can share seasonally used or surplus materials.
-                            </p>
-                        </div>
-
-                        <div class="steps__card bl">
-                            <div class="steps__row">
-                                <img src="/assets/img/sirius.png" alt="">
-                            <div class="steps__card-number steps__back-number">Sirius Technology</div>
-                            </div>
-                            <p class="steps__card-description">
-                                It is a platform that combines VR technology and education to provide equal oppportunities in education and provide students with good experiences that they can obtain.
-                            </p>
-                        </div>
-
-                        <div class="steps__card bl">
-                            <div class="steps__row">
-                                <img src="/assets/img/EEG-EPİ LOGO - Zeynep Yıldız.jpg" alt="">
-                            <div class="steps__card-number steps__back-number">EEG-EPI</div>
-                            </div>
-                            <p class="steps__card-description">
-                                Epilepsy is a neurological disorder that plunges its victims into sudden and dangerous seizures. These disorders, which cause cognitive dysfunctions that patients experience in their daily lives, carry a risk of fatal injury according to the types of disorders. Our device is suitable for daily and regular use of patients and aims to detect seizure in advance and to warn them before an attack with the mobile application connected to the device.
-                            </p>
-                        </div>
-
-                        <div class="steps__card bl">
-                            <div class="steps__row">
-                                <img src="/assets/img/aip.png" alt="">
-                            <div class="steps__card-number steps__back-number">AI Eğitim Platfromu</div>
-                            </div>
-                            <p class="steps__card-description">
-                                It is an artificial intelligence education platform that continues to work for the future, the sooner the foundations are laid on the saying that the tree bends when it is old, with artificial intelligence, which is the technology of the future, to suit every audience, especially for children.
-                            </p>
-                        </div>
-
-                        <div class="steps__card bl">
-                            <div class="steps__row">
-                                <img src="/assets/img/berat anık medya logo.png" alt="">
-                            <div class="steps__card-number steps__back-number">Berak Anik Media</div>
-                            </div>
-                            <p class="steps__card-description">
-                                Berat Anik Media; is a media and consultancy company established to enable businesses in Turkey to adapt to digital transformation more easily and to meet their needs in this field. In addition, the company carries out many social responsibility projects such as branding and bringing to light the forgotten professions in the digital field with a portion of its revenues.
-                            </p>
-                        </div>
-
+            <!--==================== EVENT PLAN ====================-->
+            <div class="counters" style="margin-bottom: 0;" id="eventplan">
+                <h1 class="home__title-prize">
+                    Etkinlik Planı<br> 
+                </h1>
+                <div class="counters__container" style=" grid-template-columns: repeat(3, 1fr) !important;">
+                    <div>
+                        <img src="/assets/img/engineer-svgrepo-com.svg" alt=""> 
+                        <h2>Başvuru</h2>
+                    </div>
+                    <div>
+                        <img src="/assets/img/coding-svgrepo-com.svg" alt="">
+                        <h2>Kodlama</h2>
+                    </div>
+                    <div>
+                        <img src="/assets/img/presentation-svgrepo-com (1).svg" alt="">
+                        <h2>Sunum</h2>
                     </div>
                 </div>
-            </section>
+            </div>
 
-        <!--==================== QUOTES ====================-->
-            <section class="quotes section container" id="quotes">
-                <div class="quotes__container grid">
-
-                    <div class="quotes__data">
-                        <h2 class="section__title quotes__title">
-                            What <br> People Say
-                        </h2>
-
-                        <div class="quotes__details">
-                            <p class="quotes__details-description">
-                                <i class="ri-double-quotes-l quotes__details-icon"></i>
-                                First of all, it was a training I attended with great pleasure and I was productive in the lessons without getting bored. I would like to thank your team and your industry for giving us such an environment and training opportunity. It is definitely on environment that everyone who is entrepreneur and wants to improve themselves should attend. Thank you very much for supporting us in this process and being with us until now. I will continue your training in the future without missing out. :)
-                                <i class="ri-double-quotes-r quotes__details-icon"></i> 
-                            </p>
-                            <cite class="cite__girl" >
-                                Neslihan DOĞAN <br>
-                                <em> AI Education Platform - Founder </em> <br>
-                            </cite>
-                            <p class="quotes__details-description">
-                                <i class="ri-double-quotes-l quotes__details-icon"></i>
-                                Each training module was very short and descriptive enough. I was very satisfied. I can progress in other trainings and courses without getting bored. Eventually my competence has increased along with it. I often talk about it and recommend it to my friends. Thank you very uch to everyone who constributed.
-                                <i class="ri-double-quotes-r quotes__details-icon"></i>
-                            </p>
-                            <cite class="cite__boy" >
-                                Fatih ATAGÜN <br>
-                                <em> Çiftçi - Founder </em> <br>
-                                <a href="https://medium.com/developer-student-clubs/hackathondan-solution-challenge-incubation-programe-ciftciden-15acd8f9e6ac" target="blank"> Blog Post </a>
-                            </cite>
-                            <p class="quotes__details-description">
-                                <i class="ri-double-quotes-l quotes__details-icon"></i>
-                                Our project, which developed from the idea stage at the People & Peace Hackathon, turned into an initiative during SCIP. It is an incubation program that we receive support in many areas from investor networks to mentorship opportunities, and we are glad to be involved in. If you have an idea about SDG targets, we say don't miss it.
-                                <i class="ri-double-quotes-r quotes__details-icon"></i>
-                            </p>
-                            <cite class="cite__girl">
-                                Aysu KEÇECİ - Founder<br>
-                                <em> WE </em> <br>
-                                <a href="https://developers.googleblog.com/2021/12/from-idea-to-impact-how-a-team-from-solution-challenge.html" target="blank"> Google Dev Blog </a>
-                            </cite>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== TIMELINE ====================-->
-
-    
             <!--==================== QUESTIONS ====================-->
-            <section class="questions section" id="faqs">
+            <section class="questions section" id="sss">
                 <h2 class="section__title-center questions__title container">
-                    Some common questions <br> were often asked
+                    Sıkça Sorulan Sorular
                 </h2>
 
                 <div class="questions__container container grid">
@@ -843,13 +501,13 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    What are the 17 Sustainable Development Goals?
+                                    DevJam Nedir?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    Created by the United Nation in 2015 to be achieved by 2030. The 17 Sustainable Development Goals (SDGs) agreed upon by all 193 United Nations Member States aim to end poverty. Ensure prosperity and protect the planet. More information about the 17 SGDs can be found here
+                                    Google Developer Student Club ODTÜ'nün düzenlediği 48 saatlik bir oyun geliştirme yarışmasıdır. Oyun dünyasından sürpriz isimleri de ağırlayacağımız bu yarışmada yer almak için hemen başvur.
                                 </p>
                             </div>
                         </div>
@@ -858,13 +516,13 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    Can my solution solve a problem outside of the scope of the 17th Sustainable Developer Goals?
+                                    DevJam'e kimler katılabilir ?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    For Solution Challenge 2022, we require your submitted solution to solve for at least one or more of the 17 SDGs. When you have submitted your solution, please review all the 17 SDGs to understand which SDG your solution is focused on and what SDG targets you are looking to solve for.
+                                    Yarışmaya 18 yaşının üstündeki herkes katılabilir. Hangi şehirde yaşıyorsan veya hangi bölümü okuyorsan fark etmez. Daha önce proje geliştirmiş olman da şart değil. Bizim için tek önemli olan oyun yapmak istemen. 
                                 </p>
                             </div>
                         </div>
@@ -873,13 +531,41 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    Can one student or team submit with multiple submissions if they’ve contributed to both projects?
+                                    DevJam ne zaman ve nerede gerçekleşecek?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    The Terms and Conditions state “LIMIT ONE (1) ENTRY PER PERSON,” so each student can only be a part of one submission.
+                                    13-14-15 Mayıs 2022 tarihlerinde Ankara Techbridge Kuzey Yıldızı'nda seni bekliyoruz.                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Takımımla birlikte katılabilir miyim? 
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Elbette. Yarışmaya maksimum 4 kişilik takımınla veya bireysel olarak katılabilirsin. Programa takım arkadaşı arayan yarışmacılara özel bir "networking" etkinliği dahil ettik.                                 </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Oyun geliştirirken hangi teknolojileri kullanabiliriz?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    İşte bu konu tamamen sana bağlı, dilediğin teknolojiyi kullanmakta özgürsün.
                                 </p>
                             </div>
                         </div>
@@ -888,18 +574,13 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    User testing is important for the solution challenge. How would you recommend we do this while social distancing?
+                                    DevJam'e katılmak ücretli mi?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    In short, we recommend getting creative within your means. To test your solution with users, it is always best to meet them face-to-face. This allows you to ask for real-time feedback, see upfront how they use your application, and pick up on subtle reactions. However, that is not possible, so we recommend getting creative in finding solutions as close to that as possible. Here are some potential solutions: <br><br>
-
-                                    1) Conduct the interview over a video call. <br>
-                                    2) Conduct the interview over a phone call, asking the potential user to constantly speak their thoughts out loud, so you can pick up on all of their feedback. <br>
-                                    3) Write up a series of questions and ask your potential user to record themselves as they answer the questions and use your solution. <br>
-                                    4) Simply ask for written feedback from your users.
+                                    DevJam'e katılmak tamamen ücretsiz. Üstelik sabah, öğle ve akşam yemeği, konaklama çay, kahve ve su ihtiyaçları bizim tarafımızdan karşılanacak.
                                 </p>
                             </div>
                         </div>
@@ -908,62 +589,13 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    I started working on a project before the solution challenge started -- can I submit it?
+                                    DevJam'e katılmak için daha önce oyun geliştirmiş olmak zorunda mıyım?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    Plants are easy way to add color energy and transform your 
-                                    space but which planet is for you. Choosing the right plant.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="questions__item">
-                            <header class="questions__header">
-                                <i class="ri-add-line questions__icon"></i>
-                                <h3 class="questions__item-title">
-                                    Yes -- it would be eligible for submission as long as it was built after May 1, 2022.
-                                </h3>
-                            </header>
-
-                            <div class="questions__content">
-                                <p class="questions__description">
-                                    Plants are easy way to add color energy and transform your 
-                                    space but which planet is for you. Choosing the right plant.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="questions__item">
-                            <header class="questions__header">
-                                <i class="ri-add-line questions__icon"></i>
-                                <h3 class="questions__item-title">
-                                    How do i choose a plant?
-                                </h3>
-                            </header>
-
-                            <div class="questions__content">
-                                <p class="questions__description">
-                                    Plants are easy way to add color energy and transform your 
-                                    space but which planet is for you. Choosing the right plant.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="questions__item">
-                            <header class="questions__header">
-                                <i class="ri-add-line questions__icon"></i>
-                                <h3 class="questions__item-title">
-                                    How do i choose a plant?
-                                </h3>
-                            </header>
-
-                            <div class="questions__content">
-                                <p class="questions__description">
-                                    Plants are easy way to add color energy and transform your 
-                                    space but which planet is for you. Choosing the right plant.
+                                    Öyle bir zorunluluğumuz bulunmuyor. Oyun dünyasına ilgi duyan, bu alanda kariyer yapmak isteyen herkese kapımız açık.
                                 </p>
                             </div>
                         </div>
@@ -976,13 +608,27 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    Can I still participate in the Solution Challenge if there is no Developer Student Club at my university?
+                                    DevJam ne kadar sürecek?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    Yes, as a student you can still participate as long as you team up with at least one student at an existing DSC university near you. You must join that DSC community through the DSC event platform. We recommend you to then reach out to the DSC lead for guidance on how to join or form a team with their community.
+                                    13 Mayıs'ta "Açılış" ile başlayıp 15 Mayıs'ta ödül töreniyle bitireceğiz. Bu da eğlence ve rekabet dolu 48 saat demek :)                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Hazır asset kullanabillir miyiz?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Evet, hazır assetler kullanabilirsiniz. Ancak kullandığınız assetleri projenizi yüklerken itch.io platformuna yazmanız gerekiyor.
                                 </p>
                             </div>
                         </div>
@@ -991,13 +637,13 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                     What is a solution demo?
+                                    Jüriler oyunları hangi kategorilerde değerlendirecek ? 
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    The demonstration video is your time to show us the most important part of your application. When evaluating, our judges will use the demonstration video to understand how a user will interact with the application.
+                                    Tema ile uyumluluk, görsellik, oynanış, oyun tasarımı, ses ve müzik, hikaye ve konsept. Detaylı puanlama yarışma başlamadan önce duyurulacaktır.
                                 </p>
                             </div>
                         </div>
@@ -1006,13 +652,13 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    Can our demonstration video be longer that 2 minutes (120 seconds)?
+                                    Farklı takımlara yardım edebilir/yardım alabilir miyim?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    As stated in the Terms and Conditions, “[The Video] cannot be longer than 120 seconds. If it is longer than this, only the first 120 seconds will be evaluated.”
+                                    Tabii ki! Diğer takımlar ile iletişimde olmayı ve onlara yardım edip onlardan yardım istemekten çekinmeyin!
                                 </p>
                             </div>
                         </div>
@@ -1021,15 +667,13 @@
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    How, in only two minutws, can we highlight our entire project?
+                                    Başka bir sorum varsa?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    In short, we recommend focusing on what’s important. <br><br>
-
-From the video, we want to understand how the user interacts with the solutions and it's features. We don’t need to know about every little feature, we care far more about the core value your solution is adding. So focus on the most important features and functionalities for the user.
+                                    Dilediğiniz zaman bizlere iletişim kısmından, Instagram'dan veya Discord'tan ulaşabilir, sorularınızı çekinmeden sorabilirsiniz.
                                 </p>
                             </div>
                         </div>
@@ -1038,98 +682,46 @@ From the video, we want to understand how the user interacts with the solutions 
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
-                                    The submission form asks us for a link to our repository. How can we share our code repo while also keeping our code private?
+                                    Etkinlik alanına ulaşım nasıl sağlanacak?
                                 </h3>
                             </header>
 
                             <div class="questions__content">
                                 <p class="questions__description">
-                                    The Terms and Conditions states: <br><br>
-
-Link should direct the judges to a repository containing your code, which can be hosted on a Version Control System, such as Github or Bitbucket. In that repository, you should include a README.txt or README.md file in the root directory. This file should contain clear instructions on how to run your code for us to be able to test out the solution. <br><br>
-
-So, if you’re running a public repository on Github, Bitbucket, or similar version control system, you can simply give us the link. But, if you want to keep your repo private, you have two options: <br><br>
-
-1) You can host your code in a private google drive folder and submit a share link. <br>
-2) In your Version Control System, you can give read access to the following email address: solutionchallengesubmissions@google.com
+                                    Ankara'nın merkezi noktalarından etkinlik alanına ücretsiz servislerle ulaşım sağlanacaktır. Dilerseniz kendi imkanlarınızla da gelebilirsiniz.
                                 </p>
                             </div>
                         </div>
 
-                        <div class="questions__item">
-                            <header class="questions__header">
-                                <i class="ri-add-line questions__icon"></i>
-                                <h3 class="questions__item-title">
-                                    In addition to Google2s developer tools, we used developer tools that were not created by Google. Does that still qualify?
-                                </h3>
-                            </header>
 
-                            <div class="questions__content">
-                                <p class="questions__description">
-                                    Yes. As per the Terms and Conditions, we require that your submissions “Use of one or more Google products or platforms including.” In addition to that, however, you can also use developer tools that Google did not develop.
-                                </p>
-                            </div>
-                        </div>
 
-                        <div class="questions__item">
-                            <header class="questions__header">
-                                <i class="ri-add-line questions__icon"></i>
-                                <h3 class="questions__item-title">
-                                    Does our project have to be deployed for submission?
-                                </h3>
-                            </header>
-
-                            <div class="questions__content">
-                                <p class="questions__description">
-                                    No, it does not have to be deployed. If the project is deployed, this will help our judges get a better understanding of what you’ve built, but it is not required.
-                            </div>
-                        </div>
-
-                        <div class="questions__item">
-                            <header class="questions__header">
-                                <i class="ri-add-line questions__icon"></i>
-                                <h3 class="questions__item-title">
-                                    Given the implications of social distancing, our ability to test with users was impacted -- will the judges consider this?
-                                </h3>
-                            </header>
-
-                            <div class="questions__content">
-                                <p class="questions__description">
-                                    Our judges will surely be mindful of the limitations that have been added by COVID-19. This includes but is not limited to: <br><br>
-
-1) Ability to meet as a team <br>
-2) Ability to have users test the solution <br>
-3) Lack of internet access or proper developer environments due to displacement from your college campus.
-                                </p>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
             </section>
 
             <!--==================== CONTACT ====================-->
-            <section class="contact section container" id="contact">                
+            <section class="contact section container" id="iletisim">                
                 <div class="contact__container grid">
                     <div class="contact__box">
                         <h2 class="section__title">
-                            Reach out to us today <br> via any of the given <br> information
+                            Bize ulaş
                         </h2>
 
                         <div class="contact__data">
                             <div class="contact__information">
-                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <h3 class="contact__subtitle">Anlık irtibat numarası</h3>
                                 <span class="contact__description">
                                     <i class="ri-phone-line contact__icon"></i>
-                                    +90 (507) 191 3564
+                                    +90 (xxx) xxx xx xx
                                 </span>
                             </div>
 
                             <div class="contact__information">
-                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <h3 class="contact__subtitle">bize e-mail yolla</h3>
                                 <span class="contact__description">
                                     <i class="ri-mail-line contact__icon"></i>
-                                    scincubation@gmail.com
+                                    xxxxxxxxxxx@xxxxx.com
                                 </span>
                             </div>
                         </div>
@@ -1144,17 +736,17 @@ So, if you’re running a public repository on Github, Bitbucket, or similar ver
 
                             <div class="contact__content">
                                 <input type="text" placeholder=" " class="contact__input">
-                                <label for="" class="contact__label">Subject</label>
+                                <label for="" class="contact__label">Konu</label>
                             </div>
 
                             <div class="contact__content contact__area">
                                 <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
-                                <label for="" class="contact__label">Message</label>
+                                <label for="" class="contact__label">Mesaj</label>
                             </div>
                         </div>
 
                         <button class="button button--flex">
-                            Send Message
+                            Gönder
                             <i class="ri-arrow-right-up-line button__icon"></i>
                         </button>
                     </form>
@@ -1167,12 +759,12 @@ So, if you’re running a public repository on Github, Bitbucket, or similar ver
             <div class="footer__container container grid">
                 <div class="footer__content">
                     <a href="#" class="footer__logo">
-                        <img id="scip_logo1" src="/assets/img/SCIP logo.png" alt="">
+                        <img id="scip_logo1" src="/assets/img/DevJam Logo.png" alt="">
                     </a>
                 </div>
             </div>
 
-            <p class="footer__copy">&#169; GDSCs. All rigths reserved</p> 
+            <p class="footer__copy">&#169; DevJam. All rigths reserved</p> 
         </footer>
         
         <!--=============== SCROLL UP ===============-->
@@ -1192,12 +784,12 @@ So, if you’re running a public repository on Github, Bitbucket, or similar ver
         <script type="application/javascript">
             function change_logo() {
                 if (document.body.className == 'dark-theme'){
-                    document.getElementById("scip_logo").src = "/assets/img/SCIP logo.png";
-                    document.getElementById("scip_logo1").src = "/assets/img/SCIP logo.png";
+                    document.getElementById("scip_logo").src = "/assets/img/DevJam Logo.png";
+                    document.getElementById("scip_logo1").src = "/assets/img/DevJam Logo.png";
                 }
                 else{
-                    document.getElementById("scip_logo").src = "/assets/img/scip_white.png";
-                    document.getElementById("scip_logo1").src = "/assets/img/scip_white.png";
+                    document.getElementById("scip_logo").src = "/assets/img/DevJam Logo.png";
+                    document.getElementById("scip_logo1").src = "/assets/img/DevJam Logo.png";
                 }
             }
         </script>
