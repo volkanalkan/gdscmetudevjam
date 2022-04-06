@@ -362,6 +362,10 @@ h1.home__title-prize{
   width: 50%;
 }
 
+.about__container{
+  place-items: center;
+}
+
 p.about__details-description {
   margin-bottom: 2rem;
 }
@@ -503,6 +507,12 @@ p.about__details-description {
 .home__social-link:hover{
   transform: translateX(.25rem);
 }
+
+.contact__social-link{
+  font-size: 5rem;
+  color: var(--text-color);
+}
+
 
 /*=============== COUNTER ===============*/
 .counters{
@@ -1149,6 +1159,10 @@ cite.cite__boy::before {
   gap: 2.5rem 3rem;
 }
 
+.container__one{
+  grid-template-columns: repeat(1, 1fr) !important;
+}
+
 .product__card{
   display: grid;
   position: relative;
@@ -1288,11 +1302,38 @@ cite.cite__boy::before {
 /*=============== CONTACT ===============*/
 .contact__container{
   row-gap: 3.5rem;
+  text-align: center;
 }
 
 .contact__data{
-  display: grid;
   row-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.iframe__map{
+width: 1000px;
+height: 500px;
+}
+
+@media screen and (max-width: 1100px){
+  .iframe__map{
+    width: 700px;
+    height: 400px;
+    }
+}
+
+@media screen and (max-width: 750px){
+  .iframe__map{
+    width: 450px;
+    height: 300px;
+    }
+}
+
+@media screen and (max-width: 500px){
+  .iframe__map{
+    width: 300px;
+    height: 300px;
+    }
 }
 
 .contact__subtitle{
@@ -1593,8 +1634,7 @@ cite.cite__boy::before {
 
   .home__container,
   .about__container,
-  .questions__container,
-  .contact__container{
+  .questions__container{
     grid-template-columns: repeat(2, 1fr);
   }
   
@@ -1671,7 +1711,7 @@ cite.cite__boy::before {
   }
   .product__container{
     padding: 4rem 0;
-    grid-template-columns: repeat(3, 185px);
+    grid-template-columns: repeat(2, 185px);
     gap: 4rem 6rem;
   }
   .product__img{
