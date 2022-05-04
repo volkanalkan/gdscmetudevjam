@@ -1160,12 +1160,16 @@ cite.cite__boy::before {
 }
 
 .container__one{
-  grid-template-columns: repeat(1, 1fr) !important;
+  grid-template-columns: repeat(2, 1fr) !important;
 }
 
 .product__card{
   display: grid;
   position: relative;
+}
+
+.pr__gr{
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .product__img{
@@ -1175,6 +1179,12 @@ cite.cite__boy::before {
   margin-bottom: var(--mb-0-75);
   transition: .3s;
   object-fit: contain;
+}
+
+.pr__circ img{
+  box-shadow: 0 0 10px #747474;
+  border: solid 1px #030303;
+  border-radius: 50%;
 }
 
 .product__title,

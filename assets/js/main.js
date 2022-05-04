@@ -142,6 +142,7 @@ sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
 
 /*=============== COUNTER ===============*/
+/*
 const counters = document.querySelectorAll('.counter');
 const speed = 500; // The lower the slower
 
@@ -223,6 +224,7 @@ const newYearTime = new Date(`May 13 $
 2022 12:00:00`);
 
 //Update Contdowntime
+
 function updateCountdown() {
     const currentTime = new Date();
     const diff = newYearTime - currentTime;
@@ -239,3 +241,4 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
+*/
