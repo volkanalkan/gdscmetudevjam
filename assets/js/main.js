@@ -142,7 +142,7 @@ sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
 
 /*=============== COUNTER ===============*/
-/*
+
 const counters = document.querySelectorAll('.counter');
 const speed = 500; // The lower the slower
 
@@ -241,4 +241,3 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
-*/
